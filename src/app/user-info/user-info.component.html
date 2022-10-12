@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div *ngFor="let i of userData.data" class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="card">
+                        <img src="{{i.avatar}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-title">{{i.id}}</p>
+                          <p class="card-text">{{i.email}}</p>
+                          <p class="card-text">{{i.first_name}}</p>
+                          <p class="card-text">{{i.last_name}}</p>
+                          
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
